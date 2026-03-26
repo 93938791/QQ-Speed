@@ -3732,8 +3732,8 @@
                     }
 
                     let imgPath = item.id <= 100 ?
-                        `resource/1%20(${item.id}).JPEG` :
-                        `resource/a%20(${Math.ceil((item.id - 100)/2)}).png`;
+                        `resource/${item.id}-${encodeURIComponent(item.name.replace(/ /g, '_'))}.JPEG` :
+                        `resource/a-${Math.ceil((item.id - 100)/2)}.png`;
                     card.innerHTML = `
                         <div class="card-image-container">
                             <img class="card-image" data-src="${imgPath}" alt="${item.name}" loading="lazy">

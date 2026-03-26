@@ -9,7 +9,12 @@
       "Bash(git config:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(pwsh -c \"\\(Get-Content ''C:\\\\Users\\\\Administrator\\\\Downloads\\\\道具\\\\道具\\\\index.html'' | Select-String ''id: [0-9][0-9]*,'' | ForEach-Object { $_Line.Split\\('',''\\)[0].Trim\\(\\) } | Select-Object -First 10\\)\"\")",
+      "Bash(findstr:*)",
+      "Bash(pwsh -Command:*)",
+      "Bash(powershell:*)",
+      "Bash(python:*)"
     ]
   }
 }

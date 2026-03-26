@@ -3742,7 +3742,7 @@
                     `;
 
                     card.querySelector('.card-image').addEventListener('click', function() {
-                        modalImg.src = this.getAttribute('data-src');
+                        modalImg.src = this.src || this.getAttribute('data-src');
                         modal.classList.add('active');
                     });
 

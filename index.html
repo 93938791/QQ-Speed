@@ -3754,8 +3754,8 @@
                     }
 
                     let imgPath = item.id <= 100 ?
-                        `resource/${item.id}-${encodeURIComponent(item.name.replace(/ /g, '_'))}.JPEG` :
-                        `resource/${item.id}-${encodeURIComponent(item.name.replace(/ /g, '_'))}.png`;
+                        `resource/${item.id}-${item.name.replace(/ /g, '_')}.JPEG` :
+                        `resource/${item.id}-${item.name.replace(/ /g, '_')}.png`;
                     card.innerHTML = `
                         <div class="card-image-container">
                             <img class="card-image" data-src="${imgPath}" alt="${item.name}" loading="lazy">
